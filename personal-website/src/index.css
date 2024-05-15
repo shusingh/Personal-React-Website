@@ -27,6 +27,8 @@ a:hover {
 }
 
 body {
+  font-family: 'IBM Plex Mono', monospace;
+  line-height: 1;
   margin: 0;
   display: flex;
   place-items: center;
