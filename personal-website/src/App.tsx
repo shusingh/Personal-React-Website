@@ -9,7 +9,9 @@ function App() {
     <React.StrictMode>
       <Provider store={store}>
         <React.Suspense fallback={<div>Loading...</div>}>
-          <AppLayout />
+          <div className="bg-white dark:bg-gray-800 min-h-screen prose prose-lg mx-auto">
+            <AppLayout />
+          </div>
         </React.Suspense>
       </Provider>
     </React.StrictMode>

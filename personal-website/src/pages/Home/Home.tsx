@@ -1,20 +1,11 @@
 import React from 'react';
 import WelcomePage from '../WelcomePage/WelcomePage';
-import styled from 'styled-components';
-const HomeWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid #eaeaea;
-  max-width: 50rem;
-  min-width: 640px;
-`;
+
 const Home: React.FC = () => {
   return (
-    <HomeWrapper>
+    <div className="bg-white dark:bg-gray-800 flex flex-col mx-auto border border-gray-200 max-w-4xl min-w-[640px]">
       <WelcomePage />
-    </HomeWrapper>
+    </div>
   );
 };
 

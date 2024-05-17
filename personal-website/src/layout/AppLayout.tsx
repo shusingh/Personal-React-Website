@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import { AppRoutes } from '../routes/config';
+import Header from '../components/Header/Header';
+import Footer from '../components/Footer/Footer';
 
 const PageLayout = styled.div`
   display: flex;
@@ -8,33 +10,13 @@ const PageLayout = styled.div`
   justify-content: flex-start;
 `;
 
-const HeaderContainer = styled.header`
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  width: 100%;
-  max-width: 50rem;
-  min-width: 640px;
-  border: 1px solid #eaeaea;
-  margin-bottom: 1rem;
-`;
-
-const Footer = styled.footer`
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  height: 64px;
-  border: 1px solid #eaeaea;
-  margin-top: auto;
-`;
-
 const AppLayout: React.FC = () => {
   return (
     <>
       <PageLayout>
-        <HeaderContainer>Header</HeaderContainer>
+        <Header />
         <AppRoutes />
-        <Footer>Footer</Footer>
+        <Footer />
       </PageLayout>
     </>
   );
