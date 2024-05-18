@@ -12,7 +12,7 @@
     "format:check": "prettier --check \"src/**/*.{js,jsx,ts,tsx,css,md}\"",
     "deploy": "gh-pages -d dist"
   },
-  "homepage": "https://yourusername.github.io/Personal-React-Website",
+  "homepage": "https://shusingh.github.io/Personal-React-Website",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
     "@fortawesome/free-brands-svg-icons": "^6.5.2",
