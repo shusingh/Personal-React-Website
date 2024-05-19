@@ -11,7 +11,7 @@ const Header: React.FC = () => {
           icon={faSeedling}
           className="text-gray-600 dark:text-gray-200"
         />
-        <span className="text-xl font-bold text-gray-600 dark:text-gray-200 mt-1 ml-1">
+        <span className="text-xl font-bold text-gray-600 dark:text-gray-200 mt-1 ml-3">
           Shubham Singh
         </span>
       </div>
