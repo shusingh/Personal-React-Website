@@ -1,4 +1,4 @@
 export enum ROUTE_URLS {
-  HOME = '/',
-  ABOUT = '/about',
+  HOME = '/Personal-React-Website/',
+  ABOUT = '/Personal-React-Website/about',
 }
