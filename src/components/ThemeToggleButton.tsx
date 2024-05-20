@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTheme } from '../context/ThemeContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
+import { faSun, faMoon } from '@fortawesome/free-regular-svg-icons';
 
 const ThemeToggleButton: React.FC = () => {
   const { theme, toggleTheme } = useTheme();

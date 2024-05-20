@@ -2,12 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.tsx';
 import './index.css';
-import { ThemeProvider } from './context/ThemeContext.tsx';
+import { Provider } from 'react-redux';
+import { store } from './store/config.ts';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <ThemeProvider>
-      <App />
-    </ThemeProvider>
+    <Provider store={store}>
+      <React.Suspense fallback={<div>Loading...</div>}>
+        <App />
+      </React.Suspense>
+    </Provider>
   </React.StrictMode>
 );
