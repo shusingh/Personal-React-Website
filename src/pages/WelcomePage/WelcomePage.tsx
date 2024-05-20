@@ -1,5 +1,5 @@
 import React from 'react';
-import SocialLinks from './components/SocialLinks';
+import SocialLinks from '../../components/common/SocialLinks';
 import WelcomeHeader from './components/WelcomeHeader';
 import WelcomeMessage from './components/WelcomeMessage';
 
@@ -12,7 +12,8 @@ const WelcomePage: React.FC = () => {
       <div className="w-full">
         <WelcomeMessage />
       </div>
-      <div className="w-full">
+      <div className="w-full flex items-center space-x-2">
+        <p className="text-gray-600 dark:text-gray-200">Social Links:</p>
         <SocialLinks />
       </div>
     </div>

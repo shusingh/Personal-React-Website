@@ -1,24 +1,23 @@
-import styled from 'styled-components';
-import { AppRoutes } from '../routes/config';
+import React from 'react';
 import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
-
-const PageLayout = styled.div`
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  justify-content: flex-start;
-`;
+import { Routes, Route } from 'react-router-dom';
+import Home from '../pages/Home/Home';
+import About from '../pages/About/About';
+import { ROUTE_URLS } from '../constants/urlConstants';
 
 const AppLayout: React.FC = () => {
   return (
-    <>
-      <PageLayout>
-        <Header />
-        <AppRoutes />
-        <Footer />
-      </PageLayout>
-    </>
+    <div className="flex flex-col min-h-screen">
+      <Header />
+      <main className="flex-grow">
+        <Routes>
+          <Route path={ROUTE_URLS.HOME} element={<Home />} />
+          <Route path={ROUTE_URLS.ABOUT} element={<About />} />
+        </Routes>
+      </main>
+      <Footer />
+    </div>
   );
 };
 
