@@ -1,4 +1,16 @@
 module.exports = {
+  settings: {
+    'import/resolver': {
+      node: {
+        paths: ['src'],
+        extensions: ['.js', '.jsx', '.ts', '.tsx']
+      },
+      typescript: {
+        alwaysTryTypes: true,
+        project: './tsconfig.json'
+      }
+    },
+  },
   root: true,
   env: { browser: true, es2020: true },
   extends: [

@@ -5,7 +5,7 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
 const SocialLinks: React.FC = () => {
   return (
-    <div className="bg-white dark:bg-gray-800 flex items-center">
+    <div className="bg-white dark:bg-gray-700 flex items-center">
       <div className="flex space-x-5">
         <div className="relative group">
           <a
@@ -17,7 +17,7 @@ const SocialLinks: React.FC = () => {
           >
             <FontAwesomeIcon
               icon={faGithubAlt}
-              className="text-gray-600 dark:text-gray-200 hover:text-blue-500"
+              className="text-gray-600 dark:text-gray-200 hover:text-green-600 dark:hover:text-green-300"
               size="lg"
             />
             <span className="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max text-xs text-gray-600 dark:text-gray-200 opacity-0 group-hover:opacity-100 transition-opacity">
@@ -35,7 +35,7 @@ const SocialLinks: React.FC = () => {
           >
             <FontAwesomeIcon
               icon={faLinkedinIn}
-              className="text-gray-600 dark:text-gray-200 hover:text-blue-500"
+              className="text-gray-600 dark:text-gray-200 hover:text-green-600 dark:hover:text-green-300"
               size="lg"
             />
             <span className="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max text-xs text-gray-600 dark:text-gray-200 opacity-0 group-hover:opacity-100 transition-opacity">
@@ -51,7 +51,7 @@ const SocialLinks: React.FC = () => {
           >
             <FontAwesomeIcon
               icon={faEnvelope}
-              className="text-gray-600 dark:text-gray-200 hover:text-blue-500"
+              className="text-gray-600 dark:text-gray-200 hover:text-green-600 dark:hover:text-green-300"
               size="lg"
             />
             <span className="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max text-xs text-gray-600 dark:text-gray-200 opacity-0 group-hover:opacity-100 transition-opacity">

@@ -9,14 +9,14 @@ import { ROUTE_URLS } from '../../constants/urlConstants';
 const Header: React.FC = () => {
   return (
     <>
-      <header className="flex justify-between items-center p-3 mt-5 bg-white dark:bg-gray-800">
+      <header className="flex justify-between items-center p-3 mt-5 bg-white dark:bg-gray-700">
         <NavLink
           to={ROUTE_URLS.HOME}
-          className="flex items-center no-underline text-gray-600 dark:text-gray-200"
+          className="flex items-center no-underline text-gray-600 dark:text-gray-200 "
         >
           <FontAwesomeIcon
             icon={faSeedling}
-            className="text-gray-600 dark:text-gray-200"
+            className="text-gray-600 dark:text-gray-200 hover:text-green-600 dark:hover:text-green-300"
           />
           <span className="text-xl font-bold text-gray-600 dark:text-gray-200 mt-1 ml-3">
             Shubham Singh
@@ -26,10 +26,10 @@ const Header: React.FC = () => {
           <NavLink
             to={ROUTE_URLS.ABOUT}
             className={({ isActive }) =>
-              `relative text-gray-600 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-300 no-underline ${isActive ? '' : ''}`
+              `relative text-gray-600 dark:text-gray-200 hover:text-green-600 dark:hover:text-green-300 no-underline ${isActive ? '' : ''} hover:decoration-wavy`
             }
           >
-            About
+            <span className="hover:underline decoration-wavy">About</span>
           </NavLink>
           <ThemeToggleButton />
         </div>

@@ -7,7 +7,7 @@ function App() {
   return (
     <ThemeProvider>
       <HashRouter>
-        <div className="bg-white dark:bg-gray-800 min-h-screen prose prose-lg mx-auto">
+        <div className="bg-white dark:bg-gray-700 min-h-screen prose prose-lg mx-auto">
           <AppLayout />
         </div>
       </HashRouter>
