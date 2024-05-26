@@ -1,10 +1,10 @@
 export const WELCOME_TEXT = 'Welcome';
 export const ABOUT_SECTION_HEADER_TEXT =
   'Thanks for visiting my Digital Garden!';
-export const ABOUT_SECTION_OVERVIEW_TEXT = `
-Hi! My name is Shubham Singh. I am a Software Engineer well-versed
-in writing code to create systems that are reliable and user-friendly.
-<br /><br />
-Welcome to my Digital Garden 🌱 where I write about different technology
-topics, haiku (俳句), and life. I hope you enjoy it and find something of meaning!
-`;
+export const HAIKU_TEXT = 'haiku (俳句)';
+export const HAIKU_LINK = 'https://en.wikipedia.org/wiki/Haiku';
+
+export const INDIANA_UNIVERSITY_TEXT =
+  'Indiana University, Blooington, IN, USA';
+export const INDIANA_UNIVERSITY_LINK = 'https://www.iu.edu/';
+export const ABOUT_SECTION_STUDY_HEADER_TEXT = 'Studies';
