@@ -8,3 +8,21 @@ export const INDIANA_UNIVERSITY_TEXT =
   'Indiana University, Blooington, IN, USA';
 export const INDIANA_UNIVERSITY_LINK = 'https://www.iu.edu/';
 export const ABOUT_SECTION_STUDY_HEADER_TEXT = 'Studies';
+
+export const ARROW = '▹';
+export const ABOUT_SECTION_TECHNOLOGY_HEADER_TEXT = 'Technologies';
+export const CURRENT_TECHNOLOGIES = [
+  'Java',
+  'Python',
+  'AWS',
+  'JavaScript',
+  'React',
+  'Redux',
+  'TypeScript',
+  'TailwindCSS',
+  'NodeJS',
+];
+
+export const LEARNING_TECHNOLOGIES = ['Rust', 'Next.js', 'GraphQL'];
+
+export const LEETCODE_PROFILE_LINK = 'https://leetcode.com/u/shusingh';

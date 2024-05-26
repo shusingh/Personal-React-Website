@@ -2,6 +2,7 @@ import React from 'react';
 import OverviewSection from './components/OverviewSection';
 import Breadcrumbs from 'src/components/Breadcrumbs/Breadcrumbs';
 import StudySection from './components/StudySection';
+import TechologySection from './components/TechnologySection';
 
 const About: React.FC = () => {
   return (
@@ -14,6 +15,9 @@ const About: React.FC = () => {
           </div>
           <div>
             <StudySection />
+          </div>
+          <div>
+            <TechologySection />
           </div>
         </div>
       </div>
