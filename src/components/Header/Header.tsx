@@ -9,7 +9,7 @@ import { ROUTE_URLS } from '../../constants/urlConstants';
 const Header: React.FC = () => {
   return (
     <>
-      <header className="flex justify-between items-center p-4 mt-5 bg-white dark:bg-gray-700">
+      <header className="flex justify-between items-center p-4 mt-5 bg-white dark:bg-gray-800">
         <NavLink
           to={ROUTE_URLS.HOME}
           className="flex items-center no-underline text-gray-600 dark:text-gray-200 "

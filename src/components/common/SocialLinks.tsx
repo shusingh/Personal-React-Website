@@ -5,7 +5,7 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
 const SocialLinks: React.FC = () => {
   return (
-    <div className="bg-white dark:bg-gray-700 flex items-center">
+    <div className="bg-white dark:bg-gray-800 flex items-center">
       <div className="flex space-x-5">
         <div className="relative group">
           <a

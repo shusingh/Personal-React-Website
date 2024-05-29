@@ -9,7 +9,7 @@ import {
 
 const StudySection: React.FC = () => {
   return (
-    <section className="bg-white dark:bg-gray-700">
+    <section className="bg-white dark:bg-gray-800">
       <HeaderText headerText={ABOUT_SECTION_STUDY_HEADER_TEXT} />
       <p className="text-gray-600 dark:text-gray-200 text-left">
         I have completed my master's degree in Computational Science from the $

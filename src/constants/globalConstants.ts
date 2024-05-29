@@ -26,3 +26,6 @@ export const CURRENT_TECHNOLOGIES = [
 export const LEARNING_TECHNOLOGIES = ['Rust', 'Next.js', 'GraphQL'];
 
 export const LEETCODE_PROFILE_LINK = 'https://leetcode.com/u/shusingh';
+
+export const OUT_OF_WORK_HEADER_TEXT = 'Out of work';
+export const LOFI_YOUTUBE_LINK = 'https://www.youtube.com/@peaceinlofi';

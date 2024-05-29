@@ -11,7 +11,7 @@ import Links from 'src/components/common/Links';
 
 const TechologySection: React.FC = () => {
   return (
-    <section className="bg-white dark:bg-gray-700">
+    <section className="bg-white dark:bg-gray-800">
       <HeaderText headerText={ABOUT_SECTION_TECHNOLOGY_HEADER_TEXT} />
       <div className="text-gray-600 dark:text-gray-200 text-left">
         <p>

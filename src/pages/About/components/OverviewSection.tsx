@@ -9,7 +9,7 @@ import {
 
 const OverviewSection: React.FC = () => {
   return (
-    <section className="bg-white dark:bg-gray-700">
+    <section className="bg-white dark:bg-gray-800">
       <HeaderText headerText={ABOUT_SECTION_HEADER_TEXT} />
       <p className="text-gray-600 dark:text-gray-200 text-left">
         Hi! My name is Shubham Singh. I am a Software Engineer well-versed in
