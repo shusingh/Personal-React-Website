@@ -15,6 +15,6 @@ export const haikus = [
   {
     title: 'Dreams',
     haiku:
-      'Dreams take flight on winds\nimagination soaring\nhope pains the future.',
+      'Dreams take flight on winds\nimagination soaring\nhope paints the future.',
   },
 ];
