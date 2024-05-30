@@ -14,14 +14,14 @@ const TechologySection: React.FC = () => {
     <section className="bg-white dark:bg-gray-800">
       <HeaderText headerText={ABOUT_SECTION_TECHNOLOGY_HEADER_TEXT} />
       <div className="text-gray-600 dark:text-gray-200 text-left">
-        <p>
+        <div>
           I am currently working with a diverse set of technologies including:
           {<Technologies technologies={CURRENT_TECHNOLOGIES} />}
-        </p>
-        <p>
+        </div>
+        <div>
           I am currently in the process of learning new technologies such as:
           {<Technologies technologies={LEARNING_TECHNOLOGIES} />}
-        </p>
+        </div>
         <p>
           Additionally I have a keep interest in data structure and algorithms.
           Please check out my LeetCode profile here:{' '}

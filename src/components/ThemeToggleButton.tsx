@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTheme } from '../context/ThemeContext';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSun, faMoon } from '@fortawesome/free-regular-svg-icons';
+import { ReactComponent as Sun } from 'src/assets/images/sun.svg';
+import { ReactComponent as Moon } from 'src/assets/images/moon.svg';
 
 const ThemeToggleButton: React.FC = () => {
   const { theme, toggleTheme } = useTheme();
@@ -19,9 +19,9 @@ const ThemeToggleButton: React.FC = () => {
       }}
     >
       {theme === 'light' ? (
-        <FontAwesomeIcon icon={faSun} className="text-gray-600" />
+        <Moon className="text-gray-800 dark:text-white" />
       ) : (
-        <FontAwesomeIcon icon={faMoon} className="text-white -rotate-12" />
+        <Sun className="text-gray-800 dark:text-white" />
       )}
     </button>
   );
