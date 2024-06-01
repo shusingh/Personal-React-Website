@@ -6,8 +6,8 @@ interface HaikuCardHeadingProps {
 
 const HaikuCardHeading: React.FC<HaikuCardHeadingProps> = ({ heading }) => {
   return (
-    <div className="bg-[#c1e899]">
-      <h3 className="text-gray-900 dark:text-gray-900 my-0">{heading}</h3>
+    <div className="">
+      <h3 className="text-gray-600 dark:text-gray-300 mt-4 mb-0">{heading}</h3>
     </div>
   );
 };

@@ -1,30 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Breadcrumbs from 'src/components/Breadcrumbs/Breadcrumbs';
 import { haikus } from 'src/constants/haikus';
-import HaikuCard from './components/HaikuCard';
+import HaikuCard, { IHaiku } from './components/HaikuCard';
+import HaikuModal from './components/HaikuPopup';
 
 export const Haiku: React.FC = () => {
+  const [selectedHaiku, setSelectedHaiku] = useState<IHaiku | null>(null);
+
+  const handleCardClick = (haiku: IHaiku) => {
+    setSelectedHaiku(haiku);
+  };
+
+  const closeModal = () => {
+    setSelectedHaiku(null);
+  };
+
   return (
     <>
       <Breadcrumbs />
-      <div className="bg-white dark:bg-gray-800 flex flex-col p-2 mx-auto max-w-screen-lg w-full mt-10">
-        {haikus.map((haikuItem, index) => {
-          const isLast = index === haikus.length - 1;
-          const { title, haiku } = haikuItem;
-          return (
-            <>
-              {isLast ? (
-                <HaikuCard title={title} haiku={haiku} />
-              ) : (
-                <>
-                  <HaikuCard title={title} haiku={haiku} />
-                  <hr className="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-5 dark:bg-gray-700" />
-                </>
-              )}
-            </>
-          );
-        })}
+      <div className="bg-white dark:bg-gray-800 p-2 mx-auto max-w-screen-lg w-full mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {haikus.map((haikuItem, index) => {
+            return (
+              <React.Fragment key={index}>
+                <HaikuCard
+                  haikuItem={haikuItem}
+                  onClick={() => handleCardClick(haikuItem)}
+                />
+              </React.Fragment>
+            );
+          })}
+        </div>
       </div>
+      {selectedHaiku && (
+        <HaikuModal haikuItem={selectedHaiku} onClose={closeModal} />
+      )}
     </>
   );
 };
