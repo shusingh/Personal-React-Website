@@ -24,6 +24,14 @@ const Header: React.FC = () => {
         </NavLink>
         <div className="flex items-center space-x-4">
           <NavLink
+            to={ROUTE_URLS.BLOG}
+            className={({ isActive }) =>
+              `relative text-gray-600 dark:text-gray-200 hover:text-green-600 dark:hover:text-green-300 no-underline ${isActive ? '' : ''} hover:decoration-wavy`
+            }
+          >
+            <span className="hover:underline decoration-wavy">Blog</span>
+          </NavLink>
+          <NavLink
             to={ROUTE_URLS.HAIKU}
             className={({ isActive }) =>
               `relative text-gray-600 dark:text-gray-200 hover:text-green-600 dark:hover:text-green-300 no-underline ${isActive ? '' : ''} hover:decoration-wavy`
