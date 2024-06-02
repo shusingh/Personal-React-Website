@@ -1,3 +1,4 @@
+import { formatHaiku } from 'src/utils/haikuUtil';
 import { IHaiku } from './HaikuCard';
 import HaikuCardHeading from './HaikuCardHeading';
 import { ReactComponent as Close } from 'src/assets/images/close.svg';
@@ -20,7 +21,7 @@ const HaikuModal: React.FC<HaikuPopupProps> = ({ haikuItem, onClose }) => {
         </button>
         <HaikuCardHeading heading={haikuItem.title} />
         <p className="font-normal text-gray-700 dark:text-gray-400">
-          {haikuItem.haiku}
+          {formatHaiku(haikuItem.haiku)}
         </p>
       </div>
     </div>
