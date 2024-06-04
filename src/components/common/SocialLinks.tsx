@@ -2,6 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithubAlt, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import { faCode } from '@fortawesome/free-solid-svg-icons';
 
 const SocialLinks: React.FC = () => {
   return (
@@ -56,6 +57,24 @@ const SocialLinks: React.FC = () => {
             />
             <span className="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max text-xs text-gray-600 dark:text-gray-200 opacity-0 group-hover:opacity-100 transition-opacity">
               Email Shubham
+            </span>
+          </a>
+        </div>
+        <div className="relative group">
+          <a
+            href="https://leetcode.com/u/shusingh"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LeetCode"
+            className="flex items-center"
+          >
+            <FontAwesomeIcon
+              icon={faCode}
+              className="text-gray-600 dark:text-gray-200 hover:text-green-600 dark:hover:text-green-300"
+              size="lg"
+            />
+            <span className="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max text-xs text-gray-600 dark:text-gray-200 opacity-0 group-hover:opacity-100 transition-opacity">
+              Shubham on LeetCode
             </span>
           </a>
         </div>
