@@ -13,8 +13,8 @@ const Blog: React.FC = () => {
           key={post.slug}
           title={post.title}
           description={post.description}
-          date={post.date}
           slug={post.slug}
+          content={post.content}
         />
       ))}
     </div>

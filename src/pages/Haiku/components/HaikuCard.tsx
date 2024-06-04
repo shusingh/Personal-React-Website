@@ -17,7 +17,7 @@ const HaikuCard: React.FC<HaikuCardProps> = ({ haikuItem, onClick }) => {
   return (
     <div
       onClick={onClick}
-      className="cursor-pointer p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+      className="cursor-pointer p-6 bg-white border border-dashed border-gray-800 rounded-lg hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
     >
       <h4 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
         {title}
